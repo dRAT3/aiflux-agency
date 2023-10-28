@@ -3,6 +3,10 @@
 	import GitHubIcon from '$lib/icons/socials/github.svelte';
 	import Button from '$lib/components/atoms/Button.svelte';
 	import Sparkles from '../atoms/Sparkles.svelte';
+
+	  function openChat() {
+    window.voiceflow.chat.open();
+  }
 </script>
 
 <section id="hero">
@@ -14,7 +18,7 @@
 	<div class="ctas">
 		<Sparkles>
 
-		<Button color="primary" href="https://histoire-sveltekit-static-blog-template.vercel.app/">
+			<Button color="primary" on:click={openChat}  >
 			<ChatIcon slot="icon" />
 			Book Call	
 		</Button>

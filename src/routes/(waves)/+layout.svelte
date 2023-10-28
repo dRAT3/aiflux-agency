@@ -23,19 +23,6 @@
 	<meta name="twitter:image" content={image} />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	  <script type="text/javascript">
-    (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '653c1ba02b10e50007c446d5' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-    })(document, 'script');
-  </script>
 </svelte:head>
 
 <Waves />
