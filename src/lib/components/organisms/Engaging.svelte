@@ -1,6 +1,14 @@
 <script lang="ts">
+	import Button from '$lib/components/atoms/Button.svelte';
 	import ContentSection from '$lib/components/organisms/ContentSection.svelte';
 	import Image from '../atoms/Image.svelte';
+	import ChatIcon from '$lib/icons/chat.svelte';
+	import Sparkles from '../atoms/Sparkles.svelte';
+
+	function openChat() {
+		window.voiceflow.chat.open();
+	}
+
 </script>
 <ContentSection
 	id="engaging"
@@ -27,6 +35,15 @@ If you have a question, a problem, or just need something clarified, our team
 is here to help. Drop us a message anytime, and we'll get back to you promptly.
 <br><br>
 </span>
+<div class="right-by-my-side">
+	<Sparkles>
+		<Button color="primary" on:click={openChat}>
+		<ChatIcon slot="icon" />
+		Book Call	
+	</Button>
+</Sparkles>
+</div>
+
 </div>
 </ContentSection>
 
@@ -52,6 +69,12 @@ is here to help. Drop us a message anytime, and we'll get back to you promptly.
 		.image {
 			width: 220px;
 			height: 220px;
+		}
+		@include for-desktop-up {
+			.right-by-my-side {
+				margin-left:150px;
+				width:200px;
+			}	
 		}
 	}
 </style>
