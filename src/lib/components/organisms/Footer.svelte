@@ -12,6 +12,7 @@
 	<div class="content">
 		<div class="copyright">
 			&copy; Copyright 2023 aiflux.agency
+			<a href="https://ponx.ai">Official Sponsor of ponx.ai</a>
 		</div>
 	</div>
 </footer>
